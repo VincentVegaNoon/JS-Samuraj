@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      fetch("http://api.nbp.pl/api/cenyzlota/last/200")
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log("Blad: ", err));
+
+      //   const promise = fetch("http://api.nbp.pl/api/cenyzlota/last/20");
+      //   //Fetch zwraca obiekt Promise
+      //   const promise2 = promise.then((response) => response.json());
+      //   promise2.then((data) => console.log(data));
+
+      //   promise.catch((error) => console.log("Blad: ", error));
+      //   console.log("1");
+      //   console.log("2");
+    </script>
+  </body>
+</html>
