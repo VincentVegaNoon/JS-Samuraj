@@ -1,0 +1,29 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 20px 60px;
+  font-size: 40px;
+  background-color: white;
+  text-transform: uppercase;
+  border: 4px dotted black;
+}
+div {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  margin: 5px;
+  float: left;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border: 2px solid black;
+}
+.circle {
+  background-color: azure;
+  border-radius: 50%;
+  color: black;
+}

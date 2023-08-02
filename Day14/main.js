@@ -58,3 +58,31 @@ Citizen.prototype.chageCitizenship = chageCitizenship = function (citizenship) {
 };
 const zenek = new Citizen("Polska", "polskie");
 const marysia = new Citizen("Francja", "francuskie");
+
+// łancuch prototypow
+// arr__proto__;
+// arr__proto__.__proto__;
+// arr.age = 20;
+//proto1.age = 20
+// Object.prototype.age = 20;
+
+// arr instanceof Array;
+// arr instanceof Object;
+// arr instanceof Citizen;
+
+// zenek instanceof Citizen;
+
+("use strict");
+// this obiekt globalnego
+const fn = function () {
+  //this.a = 5;
+  console.log(this.name);
+};
+const obj = {
+  name: "Adam",
+  fn: fn,
+};
+fn();
+obj.fn();
+
+//
